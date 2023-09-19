@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "957458962145",
+    "project_id": "everywhere-80865",
+    "storage_bucket": "everywhere-80865.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957458962145:android:dc60eb920f19d6db3549a0",
+        "android_client_info": {
+          "package_name": "com.reddog.catchme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "957458962145-mah2h127ko8j6q3jpjadct2nce31io0p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.reddog.catchme",
+            "certificate_hash": "3220c8cf2414c2547bf848f54c8d3f82968b9d62"
+          }
+        },
+        {
+          "client_id": "957458962145-rqve71mohghejph8vqqn15lkqjol125e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVYIUJq2rBY_XR37nPncja1_MTU-1ANj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "957458962145-rqve71mohghejph8vqqn15lkqjol125e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

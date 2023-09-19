@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Submit Example</title>
+	<style>
+        .form-container {
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .input-group {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="form-container">
+	<h2>Submit Form</h2>
+	<form id="myForm">
+		<div class="input-group">
+			<label for="name">Name:</label>
+			<input type="text" id="name" required>
+		</div>
+		<div class="input-group">
+			<label for="distance">Distance:</label>
+			<input type="distance" id="distance" required>
+		</div>
+		<button type="submit">Submit</button>
+	</form>
+</div>
+
+<script>
+        const form = document.getElementById('myForm');
+
+        async function handleFormSubmit(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const distance = document.getElementById('distance').value;
+            console.log("Name:", name);
+            console.log("Distance:", distance);
+            let data = await app.onFindMates(name, distance);
+            const myArr = JSON.parse(data);
+            const myJSON = JSON.stringify(myArr);
+			alert(myJSON);
+
+        }
+        form.addEventListener('submit', handleFormSubmit);
+    </script>
+</body>
+</html>
